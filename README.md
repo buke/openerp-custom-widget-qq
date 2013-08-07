@@ -1,4 +1,5 @@
 openerp-custom-widget-qq
 ========================
 
-OpenERP 自定义widget，为合作伙伴添加QQ字段
+* 作为 OpenERP 自定义widget参考
+* 为合partner 及 user 添加QQ字段
