@@ -1,0 +1,22 @@
+<template>
+<t t-name="QqWidget">
+    <span class="oe_form_field oe_form_field_url" t-att-style="widget.node.attrs.style">
+        <span class="oe_form_qq"  t-if="widget.get('effective_readonly')" >
+            <a href="#" class="oe_form_uri" target="_blank"/>
+            <span class="qq_number"></span>
+        </span>
+
+        <t t-if="!widget.get('effective_readonly')">
+            <div>
+                <input type="text"
+                    t-att-id="widget.id_for_label"
+                    t-att-tabindex="widget.node.attrs.tabindex"
+                    t-att-autofocus="widget.node.attrs.autofocus"
+                    t-att-placeholder="widget.node.attrs.placeholder"
+                t-att-maxlength="widget.field.size"
+                />
+            </div>
+        </t>
+    </span>
+</t>
+</template>
