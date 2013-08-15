@@ -24,6 +24,15 @@
     'category' : 'Sales Management',
     'description': """
 qq field for partner and user
+
+功能：自定义QQ Widget
+
+如果您觉得好用，请进入下面的网址，付费支持作者 ~
+
+http://me.alipay.com/wangbuke
+
+谢谢！
+
 """,
     'author': 'wangbuke@gmail.com',
     'website': 'http://buke.github.io',
