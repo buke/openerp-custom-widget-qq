@@ -20,7 +20,7 @@ openerp.web_qq_widget = function(instance) {
                 }
                 else{
                     this.$el.find('a').attr('href', '#').html('');
-                    this.$el.find(".qq_number").text();
+                    this.$el.find(".qq_number").text('');
                 }
             }
         },
