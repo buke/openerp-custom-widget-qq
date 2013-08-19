@@ -13,18 +13,6 @@
             </field>
         </record>
 
-        <record model="ir.ui.view" id="qq_view_users_form">
-            <field name="name">res.users.form</field>
-            <field name="model">res.users</field>
-            <field name="type">form</field>
-            <field name="inherit_id" ref="base.view_users_form" />
-            <field name="arch" type="xml">
-                <field name="email" position="after">
-                    <field name="qq" widget="qq"/>
-                </field>
-            </field>
-        </record>
-
         <record model="ir.ui.view" id="qq_view_partner_form">
             <field name="name">res.partner.form</field>
             <field name="model">res.partner</field>
@@ -32,6 +20,21 @@
             <field name="inherit_id" ref="base.view_partner_form" />
             <field name="arch" type="xml">
                 <field name="website" position="after">
+                    <field name="qq" widget="qq"/>
+                </field>
+                <xpath expr="//notebook/page/field/form/sheet/group/field[@name='mobile']" position="after">
+                    <field name="qq" widget="qq"/>
+                </xpath>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="qq_view_users_form">
+            <field name="name">res.users.form</field>
+            <field name="model">res.users</field>
+            <field name="type">form</field>
+            <field name="inherit_id" ref="base.view_users_form" />
+            <field name="arch" type="xml">
+                <field name="email" position="after">
                     <field name="qq" widget="qq"/>
                 </field>
             </field>
